@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fishwari Pin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    html {scroll-behavior: smooth;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #1e293b, #334155);
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 4rem;
+      color: #38bdf8;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px #38bdf8;
+    }
+    header .contact {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #facc15;
+      text-shadow: 0 0 12px #facc15;
+    }
+
+    /* Top Images Section */
+    .top-images {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 0;
+      background: #1e293b;
+      flex-wrap: wrap;
+    }
+    .image-container {
+      text-align: center;
+    }
+    .top-images img {
+      width: 450px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      transition: transform 0.3s ease;
+    }
+    .top-images img:hover {
+      transform: scale(1.05);
+    }
+    .image-label {
+      margin-top: 15px;
+      font-size: 2rem;
+      color: #facc15;
+      font-weight: 700;
+      text-shadow: 0 0 8px #facc15;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 150px 60px;
+      text-align: center;
+      background: linear-gradient(180deg, #1e293b, #0f172a);
+    }
+    .hero h2 {
+      font-size: 5rem;
+      color: #facc15;
+      text-shadow: 0 0 20px #facc15, 0 0 40px #fbbf24;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      color: #a5f3fc;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 150px 10%;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 4rem;
+      margin-bottom: 40px;
+      color: #34d399;
+      font-weight: 800;
+      text-shadow: 0 0 12px #34d399;
+    }
+    section p {
+      font-size: 2rem;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+    .highlight {
+      font-size: 5rem;
+      font-weight: 900;
+      color: #22d3ee;
+      text-shadow: 0 0 15px #22d3ee, 0 0 40px #06b6d4;
+      margin: 60px 0;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      background: #111827;
+      font-size: 2rem;
+      color: #94a3b8;
+    }
+
+    /* Responsive */
+    @media(max-width: 1600px){
+      header h1 {font-size: 3rem;}
+      header .contact {font-size: 2.2rem;}
+      .hero h2 {font-size: 4rem;}
+      .hero p {font-size: 1.5rem;}
+      section h2 {font-size: 3rem;}
+      section p {font-size: 1.5rem;}
+      .highlight {font-size: 3.5rem;}
+      .top-images img {width: 350px;}
+    }
+    @media(max-width: 900px){
+      header {flex-direction: column; gap: 20px;}
+      .hero {padding: 120px 20px;}
+      section {padding: 100px 20px;}
+      .top-images {flex-direction: column; gap: 20px;}
+      .top-images img {width: 90%;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fishwari Pin</h1>
+    <div class="contact">📞 0564269388</div>
+  </header>
+
+  <!-- Top Images Section -->
+  <div class="top-images">
+    <div class="image-container">
+      <img src="image1.jpg" alt="Location">
+      <h3 class="image-label">Our Location</h3>
+    </div>
+    <div class="image-container">
+      <img src="image2.jpg" alt="Shop">
+      <h3 class="image-label">Our Shop</h3>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h2>Better Than All</h2>
+    <p>
+      Fishwari Shop, located in Satwa, has all types of company pins.  
+      We are unique because of our exceptional customer service — completing orders in less than an hour!
+    </p>
+  </div>
+
+  <section>
+    <h2>About Our Shop</h2>
+    <p><strong>Satwa Careem Pin Shop</strong> is the fastest and most reliable place for all types of company pins. Customers love our unique service because no matter the order size, we complete it in under an hour!</p>
+    <p>Our pins are made with precision, quality, and a focus on customer satisfaction. We provide professional-grade pins suitable for corporate use, events, and personal collections.</p>
+    <div class="highlight">BETTER THAN ALL</div>
+  </section>
+
+  <section>
+    <h2>Why Choose Fishwari?</h2>
+    <p>• Fastest service in Satwa — orders ready in less than 1 hour.</p>
+    <p>• Wide range of company pins for every requirement.</p>
+    <p>• Excellent customer service, trusted by hundreds of clients.</p>
+    <p>• Affordable prices without compromising on quality.</p>
+    <p>• Reputation for being <strong>Better Than All</strong>.</p>
+  </section>
+
+  <section>
+    <h2>Our Mission</h2>
+    <p>We aim to be the most customer-focused and fastest pin shop in the UAE. Every pin represents pride, professionalism, and identity.</p>
+    <p>Whether for companies, schools, or personal use, Fishwari ensures perfection, speed, and satisfaction in every order.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>If you want the best pin service in Satwa, call us now.</p>
+    <div class="highlight">📞 0564269388</div>
+  </section>
+
+  <footer>
+    © 2025 Fishwari Pin — Satwa Careem Pin Shop. All rights reserved.
+  </footer>
+
+</body>
+</html>
